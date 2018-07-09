@@ -1,0 +1,272 @@
+<!DOCTYPE html> *
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+
+        <h1>ご契約者様情報</h1>
+
+        <p class="pp">ご契約されるお客様の情報を入力してください</p>
+
+        <form action="php-1.php" method="post">
+
+            <table>
+                <tr>
+                    <th>契約者名
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <label>性：</label><input type="text" name="family-name" placeholder="同士で"> <label>名：</label>
+                        <input type="text" name="given-name" placeholder="ササさ">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>契約者名（カタカナ）
+                        <class>必須</class>
+                    </th>
+                    <td><label>セイ：</label>
+                        <input type="text" name="family-name-k" placeholder="ササササ"> <label>メイ：</label>
+                        <input type="text" name="given-name-k" placeholder="ササ">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th class="b">姓別
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <label>男性：</label><input type="radio" class="a" name="example-a" value="男性"> <label>女性：</label>
+                        <input class="a" type="radio" name="example-a" value="女性">
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <th>生年月日
+                        <class>必須</class>
+                    </th>
+                    <td><select name="year">
+            <option value="1992年">1992</option>
+            <option value="1993年">1993</option> 
+            <option value="1994年">1994</option>
+            <option value="1995年">1995</option>
+            <option value="1996年">1996</option>
+            <option value="1997年">1997</option>           <option value="1998年">1998</option>        
+            <option value="1999年">1999</option>
+            <option value="2000年">2000</option>
+            <option value="2001年">2001</option>
+            <option value="2002年" selected>2002</option>
+            <option value="2003年">2003</option>
+            <option value="2004年">2004</option>
+        </select> 年
+                        <select name="month">
+            <option value="1月" selected>1</option>
+            <option value="2月">2</option>
+            <option value="3月">3</option>
+            <option value="4月">4</option>
+            <option value="5月">5</option>
+            <option value="6月">6</option>
+            <option value="7月">7</option>
+            <option value="8月">8</option>
+            <option value="9月">9</option>
+            <option value="10月">10</option>
+            <option value="11月">11</option>
+            <option value="12月">12</option>
+        </select> 月
+                        <select name="day">
+            <option value="1日" selected>1</option>
+            <option value="2日" >2</option>
+            <option value="3日" >3</option>
+            <option value="4日" >4</option>
+            <option value="5日" >5</option>
+            <option value="6日" >6</option>
+            <option value="7日" >7</option>
+            <option value="8日" >8</option>
+            <option value="9日" >9</option>
+            <option value="10日" >10</option>
+            <option value="11日" >11</option>
+            <option value="12日" >12</option>
+            <option value="13日" >13</option>
+            <option value="14日" >14</option>
+            <option value="15日" >15</option>
+            <option value="16日" >16</option>
+            <option value="17日" >17</option>
+            <option value="18日" >18</option>
+            <option value="19日" >19</option>
+            <option value="20日" >20</option>
+            <option value="21日" >21</option>
+            <option value="22日" >22</option>
+            <option value="23日" >23</option>
+            <option value="24日" >24</option>
+            <option value="25日" >25</option>
+            <option value="26日" >26</option>
+            <option value="27日" >27</option>
+            <option value="28日" >28</option>
+            <option value="29日" >29</option>
+            <option value="30日" >30</option>
+            <option value="31日" >31</option>
+        </select> 日
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>ご住所
+                        <class>必須</class>
+                    </th>
+                    <td>
+
+                        <label>郵便番号：</label>
+                        <input type="text" name="post-code" placeholder="12345678"><br>
+                        <small class="link"><a href="#">
+                        ※住所から郵便番号を調べる場合はこちら</a></small><br><label>都道府県 市区町村：</label>
+                        <input type="text" name="address-level1" size="60" placeholder="住所検索ボタンをクリックしてください"><br> <label>番地・号：</label>
+                        <input type="text" name="adderss-line1" size="60" placeholder="1-10"><br> <label>ビル・マンション名　部屋番号：</label>
+                        <input type="text" name="address-line2" size="60" placeholder="イーストマンション　２０１号"><br>
+                        <small>※番地・号までの入力は必須になります。<br>※部屋番号の前にマンション・アパート名を必ず入力してください。
+                    </small>
+
+                    </td>
+
+                </tr>
+
+
+
+                <tr>
+                    <th>ご連絡先電話番号１
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <input type="text" name="tel-1" size="5" placeholder="090"> ー
+                        <input type="text" name="tel-2" size="5" placeholder="1234"> ー
+                        <input type="text" name="tel-3" size="5" placeholder="5678"><br>
+                        <small>※昼間にご連絡が取れる電話番号（携帯電話番号）を入力してください。</small>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>ご連絡先電話番号２
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <input type="text" name="tel-4" size="5" placeholder="090" autocomplete="tel"> ー
+                        <input type="text" name="tel-5" size="5" placeholder="1234" autocomplete="tel"> ー
+                        <input type="text" name="tel-6" size="5" placeholder="5678" autocomplete="tel">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>メールアドレス
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <input type="mail" name="email" size="60" placeholder="xxx@xxxx.xxx" autocomplete="email"><br>
+                        <small>※メールフィルタを設定している場合は＠informail.uqmobile.jpの受信設定が必要です。</small>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>メールアドレス（確認）
+                        <class>必須</class>
+                    </th>
+                    <td>確認のため、もう一度入力してください。（コピーはしないでください）<br>
+                        <input type="mail" name="email2" size="60" autocomplete="email" placeholder="xxx@xxxx.xxx">
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <th>ご職業
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <select name="organization">
+                        <!--<option value="" selected>選択してください</option>-->
+                        <option value='' disabled selected style='display:none;'>選択してください</option>
+                        <option value="公務員">公務員</option>
+                        <option value="経営者・役員">経営者・役員</option>
+                        <option value="会社員">会社員</option>
+                        <option value="自営業">自営業</option>
+                        <option value="自由業">自由業</option>
+                        <option value="専業主婦">専業主婦</option>
+                        <option value="アルバイト・パート">アルバイト・パート</option>
+                        <option value="学生">学生</option>
+                        <option value="その他">その他</option>
+                    </select>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>暗証番号
+                        <class>必須</class>
+                    </th>
+                    <td>任意の４桁の数字を入力してください<br>
+                        <input type="password" name="pwd" placeholder="1234">
+                        <small><br>※暗証番号は、my UQmobileご利用時、お問い合わせ時に必要になります。<br>※お忘れになられないようにメモをお取りください。お忘れになった場合は書面での通知となります。</small>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <th>暗証番号（確認）
+                        <class>必須</class>
+                    </th>
+                    <td>確認のため、もう一度入力してください。<br>
+                        <input type="password" name="pwd2" placeholder="1234">
+                    </td>
+                </tr>
+            </table>
+
+            <h1>ご利用者様情報</h1>
+
+            <p class="pp">ご利用になられるお客様の情報を入力してください</p>
+            <p class="red-text">※ご利用者様がご契約者様と異なる場合、「ご契約様の本人確認書類」と「ご利用者の本人確認書類が必要になります。<br> ※ご利用者様とご契約者様の苗字、もしくは住所が違う場合は、ご家族であることが証明できる書類が必要となります。
+            </p>
+
+            <table class="end-table">
+                <tr>
+                    <th>サービスのご利用者
+                        <class>必須</class>
+                    </th>
+                    <td>
+                        <label>本人：</label><input type="radio" name="example-3" value="本人"> <label>本人以外：</label>
+                        <input type="radio" name="example-3" value="本人以外">
+                    </td>
+                </tr>
+            </table>
+            <div class="finish-div"><input type="submit" value="確認" class="finish"></div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
